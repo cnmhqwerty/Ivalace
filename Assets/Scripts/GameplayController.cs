@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameplayController : MonoBehaviour
 {
     public static string mode = "plant";
-    public static float tickSpeed = 5;
+    public static float tickSpeed = 10;
     public GameObject count;
     public Slider sl;
     private static bool vToggle = false;
@@ -39,7 +39,7 @@ public class GameplayController : MonoBehaviour
 
     void Update()
     {
-        count.GetComponent<Text>().text = TileMap.GetSeedCount().ToString();
+        //count.GetComponent<Text>().text = TileMap.GetSeedCount().ToString();
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Plant();

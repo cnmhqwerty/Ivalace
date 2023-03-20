@@ -10,7 +10,7 @@ public class TileMap : MonoBehaviour
     public string axis,type;
     public Tile sprite;
     public Camera mainCam;
-    public static int seedCount = 5;
+    //public static int seedCount = 5;
     private float nextTick = 0;
 
     Tile[,] map;
@@ -258,6 +258,7 @@ public class TileMap : MonoBehaviour
                 break;
         }
     }
+    /*
     public static int GetSeedCount()
     {
         return seedCount;
@@ -266,4 +267,5 @@ public class TileMap : MonoBehaviour
     {
         seedCount = count;
     }
+    */
 }
